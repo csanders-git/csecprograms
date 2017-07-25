@@ -1,6 +1,5 @@
 CREATE TABLE `program_report` (
     `university`    TEXT,
-    `university_link`    TEXT,
     `state`    TEXT,
     `cae-cd`    INTEGER,
     `cae-2y`    INTEGER,

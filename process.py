@@ -32,6 +32,11 @@ def main():
             temp2 = []
             row = row[0].split(',')
             for i, cell in enumerate(row):
+                if i == 0:
+                    temp2.append("<a href=\""+str(row[i+1]) + "\">" + str(cell) + "</a>")
+                    continue
+                if i == 1:
+                    continue
                 if i in ints and row[i] == '':
                     temp2.append(0)
                 elif i in text and row[i] == '':
@@ -44,19 +49,13 @@ def main():
                     temp2.append(cell)
             entries.append(temp2)
     entries = entries[1:]
-    print entries[0]
-    print len(entries[1])
-    print entries
     for record in entries:
         record = [tuple(record)]
         cur = db.cursor()
         try:
             cur.executemany('insert into program_report values \
-                ('+('?,'*39)[:-1]+')', record)
+                ('+('?,'*38)[:-1]+')', record)
             db.commit()
         except sqlite3.ProgrammingError as e:
             pass
-            #print record
-            #print len(record)
-            #print e
 main()

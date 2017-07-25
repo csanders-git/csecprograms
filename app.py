@@ -49,7 +49,12 @@ def data():
     for row in cursor:
         onerow = '<tr>\n'
         for ind, element in enumerate(row):
-            onerow += "\t<td>"+str(element)+"</td>\n"
+            if element == 1:
+                 onerow += "\t<td>True</td>\n"
+            elif element == 0:
+                 onerow += "\t<td>False</td>\n"
+            else:
+                onerow += "\t<td>"+str(element)+"</td>\n"
         onerow += '</tr>\n'
         tablecontent += onerow
     return render_template('data.html', tc=tablecontent)

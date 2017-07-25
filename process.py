@@ -27,15 +27,27 @@ def main():
     text = [0,1,2,7,9,11,13,15,17,19,22,24]
     ints = [3,4,5,6,8,10,12,14,16,18,20,21,23,25,26,27,28,29,30,31,32,33,34,35,36,37,38]
     with open('School_Spreadsheet.csv', 'rU') as f:
-        reader = csv.reader(f, dialect=csv.excel_tab)
+        reader = csv.reader(f, dialect=csv.excel)
         for row in reader:
             temp2 = []
-            row = row[0].split(',')
+            #row = row1[0].split(',')
+            if len(row) == 40:
+                print row
+                #for i in csv.reader([row1[0]]):
+                #    print i
+                import sys
+                sys.exit()
             for i, cell in enumerate(row):
                 if i == 0:
                     temp2.append("<a href=\""+str(row[i+1]) + "\">" + str(cell) + "</a>")
                     continue
                 if i == 1:
+                    continue
+                if i == 7:
+                    if cell != "FALSE":
+                        temp2.append("<a href=\""+cell+"\">True</a>")
+                    else:
+                        temp2.append("False")
                     continue
                 if i in ints and row[i] == '':
                     temp2.append(0)
@@ -57,5 +69,7 @@ def main():
                 ('+('?,'*38)[:-1]+')', record)
             db.commit()
         except sqlite3.ProgrammingError as e:
+            print e
+            print "\t", str(record)
             pass
 main()

@@ -56,7 +56,7 @@ Georgia Southern University,http://www.georgiasouthern.edu/,Georgia,,,,FALSE,,,,
 Kennesaw State University,http://www.kennesaw.edu,Georgia,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 Middle Georgia State University,http://www.mga.edu/,Georgia,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 University of North Georgia,http://www.ung.edu,Georgia,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,,,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
-University of Hawaii Ð West Oahu,http://uhwo.hawaii.edu,Hawaii,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+University of Hawaii - West Oahu,http://uhwo.hawaii.edu,Hawaii,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 University of Hawaii at Manoa,http://www.uhm.hawaii.edu,Hawaii,FALSE,FALSE,TRUE,FALSE,FALSE,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 University of Hawaii - Maui,http://maui.hawaii.edu/,Hawaii,,,,,,,,,,,,,,,,,,,,,,,TRUE,,,,,,,,,,,,,
 Boise State University,http://coen.boisestate.edu,Idaho,,,,,,,,,,,,,,,,,,,,,,,TRUE,,,,,,,,,,,,,
@@ -130,7 +130,7 @@ Mercy College,http://www.mercy.edu,New York,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,
 New York Institute of Technology,http://www.nyit.edu,New York,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 New York University,http://cyber.nyu.edu,New York,FALSE,FALSE,TRUE,TRUE,http://cyber.nyu.edu/research/,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 Pace University,http://www.pace.edu,New York,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
-Rochester Institute of Technology,http://care-ia.gccis.rit.edu,New York,TRUE,FALSE,FALSE,FALSE,https://www.rit.edu/cybersecurity/,FALSE,,FALSE,,FALSE,,,,FALSE,,TRUE,,TRUE,TRUE,,TRUE,,,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+Rochester Institute of Technology,http://care-ia.gccis.rit.edu,New York,TRUE,FALSE,FALSE,FALSE,https://www.rit.edu/cybersecurity/,FALSE,,FALSE,,FALSE,,,,FALSE,,TRUE,,TRUE,TRUE,,TRUE,,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
 Syracuse University,http://www.syr.edu/,New York,TRUE,FALSE,TRUE,FALSE,http://cisat.syr.edu/,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 "University at Buffalo, the State University of New York",http://www.buffalo.edu,New York,TRUE,FALSE,TRUE,FALSE,https://www.cse.buffalo.edu//caeiae/index.htm,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 Utica College,http://www.utica.edu/,New York,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE

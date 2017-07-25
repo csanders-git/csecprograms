@@ -1,0 +1,19 @@
+body {
+    padding-top: 5rem;
+}
+.alert {
+    color: red;
+    margin: 0;
+    text-align: center;
+}
+.intro {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+#logo {
+    width: 20%;
+    height: 20%;
+}
+table.dataTable td {
+    padding-right: 10px;
+}

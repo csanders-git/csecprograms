@@ -28,27 +28,101 @@ def main():
     ints = [3,4,5,6,8,10,12,14,16,18,20,21,23,25,26,27,28,29,30,31,32,33,34,35,36,37,38]
     with open('School_Spreadsheet.csv', 'rU') as f:
         reader = csv.reader(f, dialect=csv.excel)
+        next(reader, None)
         for row in reader:
             temp2 = []
-            #row = row1[0].split(',')
-            if len(row) == 40:
-                print row
-                #for i in csv.reader([row1[0]]):
-                #    print i
-                import sys
-                sys.exit()
             for i, cell in enumerate(row):
+                # University
                 if i == 0:
                     temp2.append("<a href=\""+str(row[i+1]) + "\">" + str(cell) + "</a>")
                     continue
                 if i == 1:
                     continue
+                # Research link
                 if i == 7:
                     if cell != "FALSE":
                         temp2.append("<a href=\""+cell+"\">True</a>")
                     else:
                         temp2.append("False")
                     continue
+                # CS Curr
+		if i == 8:
+                    if cell != "FALSE":
+                        temp2.append("<a href=\""+row[i+1]+"\">True</a>")
+                    else:
+                        temp2.append("False")
+                    continue
+                if i == 9:
+                    continue
+ 		# SE
+                if i == 10:
+                    if cell != "FALSE":
+                        temp2.append("<a href=\""+row[i+1]+"\">True</a>")
+                    else:
+                        temp2.append("False")
+                    continue
+                if i == 11:
+                    continue
+ 		# IS
+                if i == 12:
+                    if cell != "FALSE":
+                        temp2.append("<a href=\""+row[i+1]+"\">True</a>")
+                    else:
+                        temp2.append("False")
+                    continue
+                if i == 13:
+                    continue
+ 		# IT
+                if i == 14:
+                    if cell != "FALSE":
+                        temp2.append("<a href=\""+row[i+1]+"\">True</a>")
+                    else:
+                        temp2.append("False")
+                    continue
+                if i == 15:
+                    continue
+ 		# CE
+        	if i == 16:
+                    if cell != "FALSE":
+                        temp2.append("<a href=\""+row[i+1]+"\">True</a>")
+                    else:
+                        temp2.append("False")
+                    continue
+                if i == 17:
+                    continue
+
+ 		# security
+                if i == 18:
+                    if cell != "FALSE":
+                        temp2.append("<a href=\""+row[i+1]+"\">True</a>")
+                    else:
+                        temp2.append("False")
+                    continue
+                if i == 19:
+                    continue
+ 
+                # minor
+                if i == 21:
+                    if cell != "FALSE":
+                        temp2.append("<a href=\""+row[i+1]+"\">True</a>")
+                    else:
+                        temp2.append("False")
+                    continue
+                if i == 22:
+                    continue
+ 
+ 		# masters
+                if i == 23:
+                    if cell != "FALSE":
+                        temp2.append("<a href=\""+row[i+1]+"\">True</a>")
+                    else:
+                        temp2.append("False")
+                    continue
+                if i == 24:
+                    continue
+ 
+
+
                 if i in ints and row[i] == '':
                     temp2.append(0)
                 elif i in text and row[i] == '':
@@ -60,13 +134,12 @@ def main():
                 else:
                     temp2.append(cell)
             entries.append(temp2)
-    entries = entries[1:]
     for record in entries:
         record = [tuple(record)]
         cur = db.cursor()
         try:
             cur.executemany('insert into program_report values \
-                ('+('?,'*38)[:-1]+')', record)
+                ('+('?,'*30)[:-1]+')', record)
             db.commit()
         except sqlite3.ProgrammingError as e:
             print e
